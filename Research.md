@@ -1,14 +1,16 @@
 # 第5回特別課題調査結果報告
 ## 課題１．HTTPにまつわる下記用語についての調査と報告
-### 1.1 URLとは
- * URL(Uniform Resource Locator)はインターネット上におけるリソースの位置を特定するための文字列のこと。
-  HTTPにおいては、URLは"ウェブアドレス" や "リンク" と呼ばれ、ファイル転送 (FTP) や電子メール (SMTP) 、
+### 1.1 URLとは <sup>1 )</sup>
+ * URL(Uniform Resource Locator)はインターネット上におけるリソースの位置を特定するための文字列のこと。  
+  HTTPにおいては、URLは"ウェブアドレス" や "リンク" と呼ばれ、ファイル転送 (FTP) や電子メール (SMTP) 、  
   その他のアプリケーションにおいても利用される。
 
-### 1.2クエリ文字列とは
- * クエリ文字列(Query string)はウェブサーバーに提供する追加パラメーターのことで、
- 　&記号で区切られた、キーと値のペアのリストで表現される。
- 
+### 1.2クエリ文字列とは <sup>2 )</sup>
+ * クエリ文字列(Query string)はウェブサーバーに提供する追加パラメーターのことで、  
+ URL上では&記号で区切られたキーと値のペアのリストで表現される。  
+ ユーザーへリソースを返す前に、追加処理を行うために使用される。
+　 
+  
   ・パスパラメーター（パス変数）とは何か
 
   ・クエリ文字列との違いについて
@@ -41,4 +43,5 @@ GET/POST/PUT/PATCH/DELETEそれぞれの意味を調べましょう
 
 
 #### 参考URL
-　[MDN Web Docs用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)
+1) URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)
+2) ウェブ上のリソースの識別:[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
