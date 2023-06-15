@@ -14,7 +14,7 @@
  * ウェブサーバー内にあるリソースのパス（特定の資源の所在を表す文字列）を表しており、  
 物理的な実情と関係がないウェブサーバーによって制御される抽象的なものを指す。
 
-### 1.4 パスパラメーターとクエリ文字列との違い
+### 1.4 パスパラメーターとクエリ文字列との違い<sup>4 )</sup>  
  * 下記表にそれぞれのパラメーターの違いを示す。　 
 
 | 特徴 | パスパラメーター | クエリ文字列 |
@@ -23,14 +23,15 @@
 | ２. 省略可否   | 不可  | 可能 |  
 
 ## 課題2：HTTPメソッドについての調査と報告
-### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味 
+### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味 5-7
 GET  
-* 指定したリソースの表現の転送をリクエストするもので、何か情報を検索したり取得するために使うメソッド  
-POST
-* 指定したリソースを実装した機能に従って処理をするものでユーザー登録といった登録処理・更新処理などでリソースが更新される可能性のある処理に対して使うメソッド
+* 指定したリソースの表現の転送をリクエストするもので、何か情報を検索したり取得するために使うメソッド　    
+POST  
+* 指定したリソースを実装した機能に従って処理をするものでユーザー登録といった登録処理・更新処理などでリソースが更新される可能性のある処理に対して使うメソッド  
 
 PUT
-* 対象リソースの現在の表現全体を、リクエストのペイロードで置き換えます。
+* HTTP通信でクライアント（Webブラウザなど）からWebサーバへ送るリクエストの種類の一つで、URLで指定したプログラムなどに対してデータを送信するためのメソッド
+* POSTとの違いとして、POSTでは同じデータを何度もPOSTすると同じデータが何度も追加されるのに対し、PUTでは既存のデータが更新（上書き）される。
 
 PATCH
 * リソースを部分的に変更するために使用するメソッド
@@ -38,7 +39,15 @@ PATCH
 DELETE
 * 指定したリソースを削除するために使われるメソッド
 
-### 2.2 HTTPステータスコードとは何か
+### 2.2 HTTPステータスコードとは 8
+* 特定のHTTPリクエストが正常に完了したどうかを示すもので、5つのクラスに分類される。
+
+ステータスコードの5つのクラス  
+1.情報レスポンス (100–199)
+2.成功レスポンス (200–299)
+3.リダイレクトメッセージ (300–399)
+4.クライアントエラーレスポンス (400–499)
+5.サーバーエラーレスポンス (500–599
 
 ### 2.3下記HTTPステータスコードの意味
 - 200
@@ -65,6 +74,8 @@ DELETE
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
 2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
 3)パスとは IT用語辞典 e-Words[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)
-https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f
-https://developer.mozilla.org/ja/docs/Web/HTTP/Methods
-https://qiita.com/kanataxa/items/522efb74421255f0e0a1
+4)https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f
+5)https://developer.mozilla.org/ja/docs/Web/HTTP/Methods
+6)https://qiita.com/kanataxa/items/522efb74421255f0e0a1
+7)https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html
+8)https://developer.mozilla.org/ja/docs/Web/HTTP/Status
