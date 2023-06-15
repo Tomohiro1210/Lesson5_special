@@ -15,20 +15,28 @@
 物理的な実情と関係がないウェブサーバーによって制御される抽象的なものを指す。
 
 ### 1.4 パスパラメーターとクエリ文字列との違い
- * 一意なリソースを表現する場合にはパスパラメーターに入力し、
- 　
-
-　 1. 一意なリソースを表すのに必要な情報かどうか  
-　 一意なリソース：ユーザーIDなど
-　  省略できるかどうか
-　 
+ * 下記表にそれぞれのパラメーターの違いを示す。　 
 
 | 特徴 | パスパラメーター | クエリ文字列 |
 | ------------- | ------------- | ------------ |
-| 1. 一意なリソースを表現する場合の記載要否   | 記載要  | 省略可 |
-| ２. 省略可否   | 不可  | 可能 |
+| 1. 一意なリソースの表現可否   | 可  | 不可 |
+| ２. 省略可否   | 不可  | 可能 |  
+
 ## 課題2：HTTPメソッドについての調査と報告
-### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味
+### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味 
+GET  
+* 指定したリソースの表現の転送をリクエストするもので、何か情報を検索したり取得するために使うメソッド  
+POST
+* 指定したリソースを実装した機能に従って処理をするものでユーザー登録といった登録処理・更新処理などでリソースが更新される可能性のある処理に対して使うメソッド
+
+PUT
+* 対象リソースの現在の表現全体を、リクエストのペイロードで置き換えます。
+
+PATCH
+* リソースを部分的に変更するために使用するメソッド
+
+DELETE
+* 指定したリソースを削除するために使われるメソッド
 
 ### 2.2 HTTPステータスコードとは何か
 
@@ -57,5 +65,6 @@
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
 2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
 3)パスとは IT用語辞典 e-Words[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)
-
 https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f
+https://developer.mozilla.org/ja/docs/Web/HTTP/Methods
+https://qiita.com/kanataxa/items/522efb74421255f0e0a1
