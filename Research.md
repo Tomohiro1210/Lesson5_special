@@ -67,11 +67,14 @@ DELETE
 　メソッド、URI、HTTPバージョンの情報といったWebサーバに要求する情報をもつ。
 　それぞれ、メソッドはWebサーバに要求を示すコマンド、URIはリクエストの対象となるデータ、
 　HTTPバージョンはWebブラウザがサポートするバージョンをさす。  
+
 2.メッセージヘッダ(リクエストヘッダ) 	
 　WebサーバにWebブラウザの情報を示す。具体的に、Webブラウザ側でサポートする
 　データのタイプ、データの圧縮方法、ブラウザの種類などの情報をもつ。  
+
 3.空白行  
 　Webサーバにメッセージヘッダーの終わりを伝えるために使用する。  
+
 4.メッセージボディ(リクエストボディ) 	
 　Webサーバにデータを送るために使用しており、例えば、Webページ上で入力欄がある場合、
 　入力があればそのテキスト情報を、なければ空白をWebサーバに送るために使用する。  
@@ -80,15 +83,22 @@ DELETE
 * HTTPレスポンスは、以下の４つの要素で構成される。  
 1.ステータス行 	
 　WebブラウザにWebサーバでの処理結果を伝えるもので、HTTPのバージョン、ステータスコード、説明文などの情報をもつ。  
+
 2.メッセージヘッダ(レスポンスヘッダー)  
 　WebブラウザにWebサーバの情報を示す。サーバの種類、返信するデータのタイプ、データの圧縮方法などの情報をもつ。  
+
 3.空白行  
 　Webブラウザにメッセージヘッダーの終わりを伝えるために使用する。
+
 4.メッセージボディ(レスポンスボディ)    
 　HTML文書、画像ファイル、動画ファイルなどのデータを格納するために使用する。 
 
-## 3.3 JSON
-* JSON
+## 3.3 JSON <sup>10 )</sup>
+* JavaScript Object Notationの略語で、JavaScriptにおけるオブジェクトの表記法を応用したテキスト(文字)ベースのデータ形式である。　　
+キーと値のペアを列挙したデータ構造をもち、JavaScriptが持つ整数型、浮動小数点数型、文字列型、ブール型（真偽値）、null（値無し）、  
+配列、オブジェクトを扱うことができる。  
+JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡単扱えるようにする追加機能などが公開されており、  
+設定ファイルやデータ交換などで多用されている。  
 
 
 #### 参考URL
@@ -100,4 +110,5 @@ DELETE
 6)GETとPOSTの違いについて - Qiita:[GETとPOSTの違いについて - Qiita]https://qiita.com/kanataxa/items/522efb74421255f0e0a1  
 7)PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words:[PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html  
 8)HTTP レスポンスステータスコード - HTTP | MDN:[HTTP レスポンスステータスコード - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Status  
-9)HTTP ヘッダー - HTTP | MDN:[HTTP ヘッダー - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Headers  
+9)HTTPとは:[HTTPとは][https://developer.mozilla.org/ja/docs/Web/HTTP/Headers  ](https://www.infraexpert.com/study/tcpip16.html)  
+10)JSONとは - 意味をわかりやすく - IT用語辞典 e-Words:[JSONとは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/JSON.html
