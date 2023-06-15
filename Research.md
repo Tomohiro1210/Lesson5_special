@@ -23,7 +23,7 @@
 | ２. 省略可否   | 不可  | 可能 |  
 
 ## 課題2：HTTPメソッドについての調査と報告
-### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味 <sup>5 ),6 ),7 )</sup>
+### 2.1 GET/POST/PUT/PATCH/DELETEの意味合い <sup>5 ),6 ),7 )</sup>
 GET  
 * 指定したリソースの表現の転送をリクエストするもので、何か情報を検索したり取得するために使うメソッド　　
     
@@ -40,7 +40,7 @@ PATCH
 DELETE
 * 指定したリソースを削除するために使われるメソッド
 
-### 2.2 HTTPステータスコードとは <sup>8 )</sup>
+### 2.2 HTTPステータスコードの概要 <sup>8 )</sup>
 * 特定のHTTPリクエストが正常に完了したどうかを示すもので、5つのクラスに分類される。
 
 ステータスコードの5つのクラス  
@@ -50,7 +50,8 @@ DELETE
 4.クライアントエラーレスポンス (400–499)  
 5.サーバーエラーレスポンス (500–599)  
 
-### 2.3下記HTTPステータスコードの意味
+### 2.3下記HTTPステータスコードの意味合い <sup>8 )</sup>
+* それぞれ下記のような意味合いを持つ。
 | コード　| 意味 |
 | ------------- | ------------- |
 | 200   | リクエストが成功したことを示す。HTTPメソッドにより、成功の意味合いが異なる。  | 
@@ -59,22 +60,26 @@ DELETE
 | 404   | サーバーがリクエストされたリソースを発見できないことを示し、ブラウザーではURLが解釈できなかったことを意味する。  | 
 | 500   | サーバー側で処理方法がわからない事態が発生したことを示す。  |
 
-## 課題3： 
-・リクエストヘッダーとは何かについて調べてみてください
+## 課題3：リクエストヘッダ・ボディ、レスポンスヘッダ/ボディ、JSONについて<sup>9 )</sup>
+* リクエストヘッダー  
+読み込むリソースについての情報や、そのリソースをリクエストしているクライアントに関する詳細な情報を持つ。
 
-・リクエストボディとは何かについて調べてみてください
+* リクエストボディとは何かについて調べてみてください
 
-・レスポンスヘッダーとは何かについて調べてみてください
+* レスポンスヘッダー  
+場所や提供しているサーバーに関する情報などレスポンスに関する追加情報を持つ。
+* レスポンスボディ
 
-・レスポンスボディとは何か、JSONとは何か
+* JSON
 
 
 #### 参考URL
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
-2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
-3)パスとは IT用語辞典 e-Words[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)
-4)https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f
-5)HTTP リクエストメソッド - HTTP:[HTTP リクエストメソッド - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Methods
-6)GETとPOSTの違いについて - Qiita:[GETとPOSTの違いについて - Qiita]https://qiita.com/kanataxa/items/522efb74421255f0e0a1
-7)PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words:[PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html
-8)https://developer.mozilla.org/ja/docs/Web/HTTP/Status
+2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)  
+3)パスとは IT用語辞典 e-Words[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)  
+4)パスパラメータとクエリパラメーターの違い - Qiita:[パスパラメータとクエリパラメーターの違い - Qiita]https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f  
+5)HTTP リクエストメソッド - HTTP:[HTTP リクエストメソッド - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Methods  
+6)GETとPOSTの違いについて - Qiita:[GETとPOSTの違いについて - Qiita]https://qiita.com/kanataxa/items/522efb74421255f0e0a1  
+7)PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words:[PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html  
+8)HTTP レスポンスステータスコード - HTTP | MDN:[HTTP レスポンスステータスコード - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Status  
+9)HTTP ヘッダー - HTTP | MDN:[HTTP ヘッダー - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Headers  
