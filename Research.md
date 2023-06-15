@@ -23,9 +23,10 @@
 | ２. 省略可否   | 不可  | 可能 |  
 
 ## 課題2：HTTPメソッドについての調査と報告
-### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味 5-7
+### 2.1 GET/POST/PUT/PATCH/DELETEそれぞれの意味 <sup>5 ),6 ),7 )</sup>
 GET  
-* 指定したリソースの表現の転送をリクエストするもので、何か情報を検索したり取得するために使うメソッド　    
+* 指定したリソースの表現の転送をリクエストするもので、何か情報を検索したり取得するために使うメソッド　　
+    
 POST  
 * 指定したリソースを実装した機能に従って処理をするものでユーザー登録といった登録処理・更新処理などでリソースが更新される可能性のある処理に対して使うメソッド  
 
@@ -39,15 +40,15 @@ PATCH
 DELETE
 * 指定したリソースを削除するために使われるメソッド
 
-### 2.2 HTTPステータスコードとは 8
+### 2.2 HTTPステータスコードとは <sup>8 )</sup>
 * 特定のHTTPリクエストが正常に完了したどうかを示すもので、5つのクラスに分類される。
 
 ステータスコードの5つのクラス  
-1.情報レスポンス (100–199)
-2.成功レスポンス (200–299)
-3.リダイレクトメッセージ (300–399)
-4.クライアントエラーレスポンス (400–499)
-5.サーバーエラーレスポンス (500–599
+1.情報レスポンス (100–199)  
+2.成功レスポンス (200–299)  
+3.リダイレクトメッセージ (300–399)  
+4.クライアントエラーレスポンス (400–499)  
+5.サーバーエラーレスポンス (500–599)  
 
 ### 2.3下記HTTPステータスコードの意味
 - 200
@@ -75,7 +76,7 @@ DELETE
 2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
 3)パスとは IT用語辞典 e-Words[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)
 4)https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f
-5)https://developer.mozilla.org/ja/docs/Web/HTTP/Methods
-6)https://qiita.com/kanataxa/items/522efb74421255f0e0a1
-7)https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html
+5)HTTP リクエストメソッド - HTTP:[HTTP リクエストメソッド - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Methods
+6)GETとPOSTの違いについて - Qiita:[GETとPOSTの違いについて - Qiita]https://qiita.com/kanataxa/items/522efb74421255f0e0a1
+7)PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words:[PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html
 8)https://developer.mozilla.org/ja/docs/Web/HTTP/Status
