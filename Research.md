@@ -101,6 +101,21 @@ DELETE
 キーと値のペアを列挙したデータ構造をもち、JavaScriptが持つ整数型、浮動小数点数型、文字列型、ブール型（真偽値）、null（値無し）、  配列、オブジェクトを扱うことができる。  
 JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡単扱えるようにする追加機能などが公開されており、設定ファイルやデータ交換などで多用されている。  
 
+## 課題4：追加課題 <sup>11 )</sup>  
+## 4.1 HTTPとHTTPSの違い  
+* HTTPとHTTPSの違いを以下に示す。
+
+| 調査項目　| HTTP | HTTPS |  
+| ------------- | ------------- | ------------- |  
+| 正式名称　| Hypertext Transfer Protocol | Hypertext Transfer Protocol Secure |  
+| 意味合い　| WebサーバとWebブラウザの間で、Web情報をやりとりするためのプロトコル | 暗号化されたHTTP通信 |  
+| URL       | http:// | https://
+| ポート番号 |	80 | 443
+| 利用例 | Webサイトの閲覧 | ECサイトなど |
+*ECサイト：ネットを通じて行われるモノやサービスの売買の総称であるECサービスネットを使ったモノやサービスの販売サイトのことです。
+
+・上記の表で示した通り、HTTPSは暗号化して
+
 
 #### 参考URL
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
