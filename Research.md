@@ -115,12 +115,14 @@ JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡
 
 *ECサイト：ネットを通じて行われるモノやサービスの売買の総称であるECサービスネットを使ったモノやサービスの販売サイトのこと
 
-* HTTPSにおける暗号化と復号化は自分のパソコンと通信相手であるサーバで行なっており、暗号化と復号化には公開鍵暗号方式と呼ばれる公開鍵（文字通り公開してよい鍵）とサーバ側で秘密に持っておく秘密鍵の2つと、ブラウザ側で作成する共通の鍵の3つを利用することで実現する。
-以下に暗号化と復号化のイメージを示す。
+* HTTPSにおける暗号化と復号化は自分のパソコンと通信相手であるサーバで行なっており、
+サーバーがもつ公開鍵(SSL証明書にて含まれる）、秘密に持っておく秘密鍵、ブラウザ側で作成する共通鍵の3つを使用した公開鍵暗号方式を採用し、
+暗号化と復号化を実現する。以下に暗号化と復号化のイメージを示す。  
 ![](https://www.akkodis.co.jp/-/media/Images/Akkodis/www/candidate/insight/column_39/index_c_img_07.png)
 
 ## 4.2 JSONでの表現について<sup>13 )</sup> 
 * 下記のような映画をJSONにて表現する場合を考える。映画の情報としては「タイトル」、「監督」、「公開年」があるため、それぞれの情報を含む形で表現する。
+
 ＜JSONにて表現する内容＞  
 タイトル: ショーシャンクの空に  
 監督: フランク・ダラボン  
@@ -143,15 +145,15 @@ JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡
 #### 参考URL
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
 2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)  
-3)パスとは IT用語辞典 e-Words[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)  
-4)パスパラメータとクエリパラメーターの違い - Qiita:[パスパラメータとクエリパラメーターの違い - Qiita]https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f  
-5)HTTP リクエストメソッド - HTTP:[HTTP リクエストメソッド - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Methods  
-6)GETとPOSTの違いについて - Qiita:[GETとPOSTの違いについて - Qiita]https://qiita.com/kanataxa/items/522efb74421255f0e0a1  
-7)PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words:[PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html  
-8)HTTP レスポンスステータスコード - HTTP | MDN:[HTTP レスポンスステータスコード - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Status  
-9)HTTPとは:[HTTPとは][https://developer.mozilla.org/ja/docs/Web/HTTP/Headers  ](https://www.infraexpert.com/study/tcpip16.html)  
-10)JSONとは - 意味をわかりやすく - IT用語辞典 e-Words:[JSONとは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/JSON.html
-11）HTTPとは？HTTPSとの違いをサイト移行で実施するリダイレクト設定などをもとに解説 | ITコラム｜アイティーエム株式会社[HTTPとは？HTTPSとの違いをサイト移行で実施するリダイレクト設定などをもとに解説 | ITコラム｜アイティーエム株式会社]https://www.itmanage.co.jp/column/about-http-https/  
-12)httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社[httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社]https://www.akkodis.co.jp/candidate/insight/column_39  
-13)JSON の操作 - ウェブ開発を学ぶ | MDN[JSON の操作 - ウェブ開発を学ぶ | MDN]https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/JSON  
-14)非エンジニア向けのMarkdown記法入門 | BioTech ラボ・ノート[非エンジニア向けのMarkdown記法入門 | BioTech ラボ・ノート]https://biotech-lab.org/articles/3211
+3)パスとは IT用語辞典 e-Words：[ IT用語辞典 e-Words](https://e-words.jp/w/%E3%83%91%E3%82%B9.html)  
+4)パスパラメータとクエリパラメーターの違い - Qiita：[パスパラメータとクエリパラメーターの違い - Qiita](https://qiita.com/Marusoccer/items/7ccc7c959ccb5efc080f)  
+5)HTTP リクエストメソッド - HTTP：[HTTP リクエストメソッド - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Methods)  
+6)GETとPOSTの違いについて - Qiita：[GETとPOSTの違いについて - Qiita](https://qiita.com/kanataxa/items/522efb74421255f0e0a1)  
+7)PUTメソッド（HTTP PUT）とは - 意味をわかりやすく - IT用語辞典 e-Words：[PUTメソッド（HTTP PUT）とは](https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html)  
+8)HTTP レスポンスステータスコード - HTTP | MDN：[HTTP レスポンスステータスコード - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Status)  
+9)HTTPとは：[HTTPとは](https://www.infraexpert.com/study/tcpip16.html)  
+10)JSONとは IT用語辞典 e-Words：[JSONとは](https://e-words.jp/w/JSON.html)  
+11)HTTPとは？ | ITコラム｜アイティーエム株式会社：[HTTPとは？](https://www.itmanage.co.jp/column/about-http-https/)   
+12)httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社：[httpsとは？](https://www.akkodis.co.jp/candidate/insight/column_39)  
+13)JSON の操作 - ウェブ開発を学ぶ | MDN：[JSON の操作 - ウェブ開発を学ぶ | MDN](https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/JSON)  
+14)非エンジニア向けのMarkdown記法入門 | BioTech ラボ・ノート：[非エンジニア向けのMarkdown記法入門 | BioTech ラボ・ノート](https://biotech-lab.org/articles/3211)
