@@ -101,7 +101,7 @@ DELETE
 キーと値のペアを列挙したデータ構造をもち、JavaScriptが持つ整数型、浮動小数点数型、文字列型、ブール型（真偽値）、null（値無し）、  配列、オブジェクトを扱うことができる。  
 JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡単扱えるようにする追加機能などが公開されており、設定ファイルやデータ交換などで多用されている。  
 
-## 課題4：追加課題 <sup>11 )</sup>  
+## 課題4：追加課題 <sup>11 ),12 )</sup>  
 ## 4.1 HTTPとHTTPSの違い  
 * HTTPとHTTPSの違いを以下に示す。
 
@@ -111,17 +111,17 @@ JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡
 | 意味合い　| WebサーバとWebブラウザの間で、Web情報をやりとりするためのプロトコル | 暗号化されたHTTP通信 |  
 | URL       | http:// | https://
 | ポート番号 |	80 | 443
-| 利用例 | Webサイトの閲覧 | ECサイトや個人情報登録・編集 |
+| 利用例 | Webサイトの閲覧 | ECサイトや個人情報登録・編集 |  
+
 *ECサイト：ネットを通じて行われるモノやサービスの売買の総称であるECサービスネットを使ったモノやサービスの販売サイトのこと
 
-* HTTPSにおける通信について下記の図で示す。流れとしては以下の通り。
+* HTTPSにおける暗号化と復号化は自分のパソコンと通信相手であるサーバで行なっており、暗号化と復号化には公開鍵暗号方式と呼ばれる公開鍵（文字通り公開してよい鍵）とサーバ側で秘密に持っておく秘密鍵の2つと、ブラウザ側で作成する共通の鍵の3つを利用することで実現する。
+以下に暗号化と復号化のイメージを示す。
+![](https://www.akkodis.co.jp/-/media/Images/Akkodis/www/candidate/insight/column_39/index_c_img_07.png)
 
-暗号化と復号化は自分のパソコンと通信相手であるサーバで行ないます。この暗号化と復号化には、公開鍵暗号方式を利用します。
-
-公開鍵暗号方式は、公開鍵（文字通り公開してよい鍵）とサーバ側で秘密に持っておく秘密鍵の2つと、ブラウザ側で作成する共通の鍵の3つを利用して通信を暗号化します。
+## 4.2 JSONでの表現について 
 
 
-https://www.akkodis.co.jp/-/media/Images/Akkodis/www/candidate/insight/column_39/index_c_img_07.png
 #### 参考URL
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
 2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)  
@@ -133,3 +133,5 @@ https://www.akkodis.co.jp/-/media/Images/Akkodis/www/candidate/insight/column_39
 8)HTTP レスポンスステータスコード - HTTP | MDN:[HTTP レスポンスステータスコード - HTTP | MDN]https://developer.mozilla.org/ja/docs/Web/HTTP/Status  
 9)HTTPとは:[HTTPとは][https://developer.mozilla.org/ja/docs/Web/HTTP/Headers  ](https://www.infraexpert.com/study/tcpip16.html)  
 10)JSONとは - 意味をわかりやすく - IT用語辞典 e-Words:[JSONとは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/JSON.html
+11）HTTPとは？HTTPSとの違いをサイト移行で実施するリダイレクト設定などをもとに解説 | ITコラム｜アイティーエム株式会社[HTTPとは？HTTPSとの違いをサイト移行で実施するリダイレクト設定などをもとに解説 | ITコラム｜アイティーエム株式会社]https://www.itmanage.co.jp/column/about-http-https/  
+12)httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社[httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社]https://www.akkodis.co.jp/candidate/insight/column_39
