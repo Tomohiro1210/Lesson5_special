@@ -121,7 +121,7 @@ JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡
 公開鍵暗号方式は、公開鍵（文字通り公開してよい鍵）とサーバ側で秘密に持っておく秘密鍵の2つと、ブラウザ側で作成する共通の鍵の3つを利用して通信を暗号化します。
 
 
-
+https://www.akkodis.co.jp/-/media/Images/Akkodis/www/candidate/insight/column_39/index_c_img_07.png
 #### 参考URL
 1)URL - MDN Web Docs 用語集：[URL - MDN Web Docs 用語集](https://developer.mozilla.org/ja/docs/Glossary/URL)  
 2)ウェブ上のリソースの識別：[ウェブ上のリソースの識別 - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)  
