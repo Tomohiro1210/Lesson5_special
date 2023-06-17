@@ -119,7 +119,25 @@ JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡
 以下に暗号化と復号化のイメージを示す。
 ![](https://www.akkodis.co.jp/-/media/Images/Akkodis/www/candidate/insight/column_39/index_c_img_07.png)
 
-## 4.2 JSONでの表現について 
+## 4.2 JSONでの表現について<sup>13 )</sup> 
+* 下記のような映画をJSONにて表現する場合を考える。映画の情報としては「タイトル」、「監督」、「公開年」があるため、それぞれの情報を含む形で表現する。
+＜JSONにて表現する内容＞  
+タイトル: ショーシャンクの空に  
+監督: フランク・ダラボン  
+公開年: 1995  
+
+＜表現結果＞  <sup>14 )</sup> 
+```
+  {  
+    "movies": [  
+      {  
+        "title":"ショーシャンクの空に",  
+        "director":フランク・ダラボン,  
+        "published_year":1995  
+      }  
+    ]  
+  }
+```
 
 
 #### 参考URL
@@ -134,4 +152,6 @@ JavaScriptだけでなく、数多くのプログラミング言語でJSONを簡
 9)HTTPとは:[HTTPとは][https://developer.mozilla.org/ja/docs/Web/HTTP/Headers  ](https://www.infraexpert.com/study/tcpip16.html)  
 10)JSONとは - 意味をわかりやすく - IT用語辞典 e-Words:[JSONとは - 意味をわかりやすく - IT用語辞典 e-Words]https://e-words.jp/w/JSON.html
 11）HTTPとは？HTTPSとの違いをサイト移行で実施するリダイレクト設定などをもとに解説 | ITコラム｜アイティーエム株式会社[HTTPとは？HTTPSとの違いをサイト移行で実施するリダイレクト設定などをもとに解説 | ITコラム｜アイティーエム株式会社]https://www.itmanage.co.jp/column/about-http-https/  
-12)httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社[httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社]https://www.akkodis.co.jp/candidate/insight/column_39
+12)httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社[httpsとは？httpとの違い、移行のメリットや注意点を解説！ | AKKODiS（アコーディス）コンサルティング株式会社]https://www.akkodis.co.jp/candidate/insight/column_39  
+13)JSON の操作 - ウェブ開発を学ぶ | MDN[JSON の操作 - ウェブ開発を学ぶ | MDN]https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/JSON  
+14)非エンジニア向けのMarkdown記法入門 | BioTech ラボ・ノート[非エンジニア向けのMarkdown記法入門 | BioTech ラボ・ノート]https://biotech-lab.org/articles/3211
